@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= 'JSON'
+  p Welcome to JSON
+  p #{title}
+  div
+      table
+          thead
+          tbody
+              for object in array
+                  tr
+                    for subobject in object
+                        td= subobject
